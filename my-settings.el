@@ -19,6 +19,8 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(add-hook 'after-init-hook 'global-flycheck-mode)
+
 (setq select-active-regions nil)
 (setq mouse-drag-copy-region t)
 (global-set-key [mouse-2] 'mouse-yank-at-click)
