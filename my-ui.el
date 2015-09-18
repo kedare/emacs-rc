@@ -41,12 +41,14 @@
 
 (global-set-key (kbd "C-x C-z") 'next-multiframe-window)
 
-(require 'ido)
-(require 'ido-vertical-mode)
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode t)
-(ido-vertical-mode t)
+;; IDO is dead
+;;(require 'ido)
+;;(require 'ido-vertical-mode)
+;;(setq ido-enable-flex-matching t)
+;;(setq ido-everywhere t)
+;;(ido-mode t)
+;;(ido-vertical-mode t)
+
 
 (when (display-graphic-p)
     ;; Ultimate tweaking
@@ -56,6 +58,10 @@
 ;;(global-set-key (kbd "C-x C-b") 'ibuffer)
 ;;    (autoload 'ibuffer "ibuffer" "List buffers." t)
 
+;; Helm rox
+
+(require 'helm-config)
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list) 
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 ;; END OF UI
