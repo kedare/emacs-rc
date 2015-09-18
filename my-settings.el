@@ -38,7 +38,6 @@
 (setq column-number-mode 1)
 (setq line-number-mode 1)
 (global-linum-mode 1)
-(scroll-bar-mode -1)
 (setq linum-format "%4d \u2502 ")
 (setq c-basic-offset 2)
 
@@ -52,7 +51,6 @@
                     :height 110
                     :weight 'normal
                     :width 'normal))
-    (scroll-bar-mode -1)
   )
 
 ;; OS X / NextStep
@@ -78,8 +76,11 @@
 
 (when (display-graphic-p)
     ;; Ultimate tweaking
+    (progn 
     (nyan-mode t)
-  (nyan-start-animation))
+  (nyan-start-animation)
+    (scroll-bar-mode -1)))
+
 
 ;;(global-set-key (kbd "C-x C-b") 'ibuffer)
 ;;    (autoload 'ibuffer "ibuffer" "List buffers." t)
