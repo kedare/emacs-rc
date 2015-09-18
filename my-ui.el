@@ -42,9 +42,11 @@
 (global-set-key (kbd "C-x C-z") 'next-multiframe-window)
 
 (require 'ido)
+(require 'ido-vertical-mode)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode t)
+(ido-vertical-mode t)
 
 (when (display-graphic-p)
     ;; Ultimate tweaking
