@@ -51,7 +51,9 @@
                     :family "Source Code Pro"
                     :height 110
                     :weight 'normal
-                    :width 'normal)))
+                    :width 'normal))
+    (scroll-bar-mode -1)
+  )
 
 ;; OS X / NextStep
 (if (eq (window-system) 'ns)
