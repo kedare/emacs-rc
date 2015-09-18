@@ -10,6 +10,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(compilation-message-face (quote default))
+ '(cperl-indent-parens-as-block t)
  '(custom-enabled-themes (quote (wombat)))
  '(custom-safe-themes
    (quote
@@ -18,7 +19,6 @@
 ;; Packages Loading
 
 (load "~/.emacs.d/my-packages")
-(load "~/.emacs.d/my-ui")
 (load "~/.emacs.d/my-settings")
 (load "~/.emacs.d/my-erc")
 (load "~/.emacs.d/my-evil")
