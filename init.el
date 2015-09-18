@@ -23,7 +23,7 @@
 (load "~/.emacs.d/my-erc")
 (load "~/.emacs.d/my-evil")
 (load "~/.emacs.d/my-helm")
-(load "~/.emacs.d/my-smex")
+;; (load "~/.emacs.d/my-smex")
 (load "~/.emacs.d/my-perl")
 (load "~/.emacs.d/my-python")
 (load "~/.emacs.d/my-ruby")
