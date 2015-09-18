@@ -38,7 +38,7 @@
 (setq column-number-mode 1)
 (setq line-number-mode 1)
 (global-linum-mode 1)
-(setq scroll-bar-mode 0)
+(scroll-bar-mode -1)
 (setq linum-format "%4d \u2502 ")
 (setq c-basic-offset 2)
 
