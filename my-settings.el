@@ -31,13 +31,14 @@
 (setq mouse-drag-copy-region t)
 (global-set-key [mouse-2] 'mouse-yank-at-click)
 
-(menu-bar-mode -1)
-(tool-bar-mode -1)
+(menu-bar-mode 0)
+(tool-bar-mode 0)
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 (column-number-mode 1)
 (line-number-mode 1)
 (global-linum-mode 1)
+(scroll-bar-mode 0)
 (setq linum-format "%4d \u2502 ")
 (setq c-basic-offset 2)
 
