@@ -31,8 +31,8 @@
 (setq mouse-drag-copy-region t)
 (global-set-key [mouse-2] 'mouse-yank-at-click)
 
-(setq menu-bar-mode 0)
-(setq tool-bar-mode 0)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 (setq column-number-mode 1)
