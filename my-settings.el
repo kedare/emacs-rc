@@ -17,8 +17,8 @@
 
 ;; Autocompletion configuration
 (ac-config-default)
-(setq ac-delay 0)
-(setq ac-quick-help-delay 0)
+(setq ac-delay 1)
+(setq ac-quick-help-delay 1)
 (setq ac-auto-start t)
 (setq ac-dwim t)
 

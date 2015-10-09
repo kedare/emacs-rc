@@ -15,7 +15,7 @@
 (setq-default js2-auto-indent-p nil)
 (setq-default js2-enter-indents-newline nil)
 (setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON"))
-(setq-default js2-idle-timer-delay 0.1)
+(setq-default js2-idle-timer-delay 0.3)
 (setq-default js2-indent-on-enter-key nil)
 (setq-default js2-mirror-mode nil)
 (setq-default js2-strict-inconsistent-return-warning nil)
