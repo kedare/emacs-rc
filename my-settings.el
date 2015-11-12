@@ -22,6 +22,13 @@
 (setq ac-auto-start t)
 (setq ac-dwim t)
 
+;; Parenthesis highlight everywhere
+(define-globalized-minor-mode global-highlight-parentheses-mode
+  highlight-parentheses-mode
+  (lambda ()
+    (highlight-parentheses-mode t)))
+(global-highlight-parentheses-mode t)
+
 (require 'yasnippet)
 (yas-global-mode 1)
 
