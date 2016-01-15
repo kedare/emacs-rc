@@ -7,6 +7,9 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq calendar-week-start-day 1)
 
+(setq indent-tabs-mode nil)
+(setq tab-width 2)
+
 (defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
 (setq backup-directory-alist
       `((".*" . ,emacs-tmp-dir)))
