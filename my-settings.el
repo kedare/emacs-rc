@@ -44,7 +44,7 @@
 (setq inhibit-startup-message t)
 (setq column-number-mode 1)
 (setq line-number-mode 1)
-(global-linum-mode 1)
+;; (global-linum-mode 1) ;; No linum by default
 (setq linum-format "%4d \u2502 ")
 (setq c-basic-offset 2)
 
@@ -123,5 +123,8 @@
 
 (global-set-key (kbd "<mouse-4>") 'scroll-down-10-lines)
 (global-set-key (kbd "<mouse-5>") 'scroll-up-10-lines)
+
+;; Dired everywhere
+(global-set-key (kbd "C-X C-D") 'dired)
 
 ;; END OF SETTINGS
