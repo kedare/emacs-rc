@@ -29,7 +29,7 @@
 (load "~/.emacs.d/my-web")
 (load "~/.emacs.d/my-org")
 (load "~/.emacs.d/my-markdown")
-
+(load "~/.emacs.d/my-gnus")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
