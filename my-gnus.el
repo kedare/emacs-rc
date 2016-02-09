@@ -69,7 +69,8 @@
 (setq message-citation-line-function 'message-insert-formatted-citation-line)
 (setq message-citation-line-format "%N schrob am %d. %b. %Y um %R Uhr dies:\n") ; %N = (real name, else mail address)
 
-(gnus-demon-add-handler 'gnus-demon-scan-news 2 t) ; grab new news every 2 minutes
+; Not working everywhere
+; (gnus-demon-add-handler 'gnus-demon-scan-news 2 t) ; grab new news every 2 minutes
 
 (add-hook 'gnus-article-display-hook 'gnus-article-highlight-citation t) ; highlight quotes
 (add-hook 'gnus-group-mode-hook 'gnus-topic-mode)                        ; use topic separation in the Group overview

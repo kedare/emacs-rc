@@ -10,6 +10,8 @@
 (setq indent-tabs-mode nil)
 (setq tab-width 2)
 
+(load-theme 'zenburn)
+
 (defconst emacs-tmp-dir (format "%s/%s%s/" temporary-file-directory "emacs" (user-uid)))
 (setq backup-directory-alist
       `((".*" . ,emacs-tmp-dir)))
