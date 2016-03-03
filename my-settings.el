@@ -60,22 +60,29 @@
 
 ;; Windows
 (if (eq (window-system) 'w32)
-    (when (display-graphic-p)
-      (set-face-attribute 'default nil
-                    :family "Source Code Pro"
-                    :height 110
-                    :weight 'normal
-                    :width 'normal))
+    (progn 
+      (when (display-graphic-p)
+	(set-face-attribute 'default nil
+			    :family "Source Code Pro"
+			    :height 110
+			    :weight 'normal
+			    :width 'normal))
+      (menu-bar-mode 1)
+      )
   )
 
 ;; OS X / NextStep
 (if (eq (window-system) 'ns)
+    (progn
     (when (display-graphic-p)
       (set-face-attribute 'default nil
-                    :family "Source Code Pro for Powerline"
-                    :height 110
-                    :weight 'normal
-                    :width 'normal)))
+			  :family "Source Code Pro for Powerline"
+			  :height 110
+			  :weight 'normal
+			  :width 'normal))
+    (menu-bar-mode 1)
+    )
+  )
 ;; End of font configuration
 
 (global-set-key (kbd "C-x C-z") 'next-multiframe-window)
@@ -90,10 +97,10 @@
 
 
 (when (display-graphic-p)
-    ;; Ultimate tweaking
-    (progn 
+  ;; Ultimate tweaking
+  (progn 
     (nyan-mode t)
-  (nyan-start-animation)
+    (nyan-start-animation)
     (scroll-bar-mode -1)))
 
 
