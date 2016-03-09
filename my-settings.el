@@ -113,6 +113,7 @@
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list) 
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+(define-key helm-buffer-map (kbd "C-x C-k") 'helm-buffer-run-kill-buffers)
 
 ;; Use HELM for Flycheck
 (eval-after-load 'flycheck
