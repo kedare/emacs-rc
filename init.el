@@ -12,7 +12,7 @@
  '(cperl-indent-parens-as-block t)
  '(custom-safe-themes
    (quote
-    ("323661478a9ebde802bb7fe1a10b261c65d01bd0eca25a5004968c44745cb369" "ff02e8e37c9cfd192d6a0cb29054777f5254c17b1bf42023ba52b65e4307b76a" default)))
+    ("f3d6a49e3f4491373028eda655231ec371d79d6d2a628f08d5aa38739340540b" "323661478a9ebde802bb7fe1a10b261c65d01bd0eca25a5004968c44745cb369" "ff02e8e37c9cfd192d6a0cb29054777f5254c17b1bf42023ba52b65e4307b76a" default)))
  '(vc-annotate-very-old-color "#DC8CC3"))
  ;; Packages Loading
 
@@ -31,6 +31,7 @@
 (load "~/.emacs.d/my-org")
 (load "~/.emacs.d/my-markdown")
 (load "~/.emacs.d/my-gnus")
+(load "~/.private-emacs.d/init")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

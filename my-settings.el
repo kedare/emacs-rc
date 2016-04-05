@@ -118,8 +118,8 @@
 (define-key helm-buffer-map (kbd "C-x C-k") 'helm-buffer-run-kill-buffers)
 
 ;; Use HELM for Flycheck
-(eval-after-load 'flycheck
-  '(define-key flycheck-mode-map (kbd "C-c C-c") 'helm-flycheck))
+;;(eval-after-load 'flycheck
+;;  '(define-key flycheck-mode-map (kbd "C-c C-c") 'helm-flycheck))
 
 ;; Mouse configuration
 (setq xterm-mouse-mode t)
