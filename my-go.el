@@ -1,3 +1,6 @@
+(setenv "GOPATH" (file-truename "~/.gopath"))
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin:" (getenv "GOPATH")))
+
 (with-eval-after-load 'go-mode
   (require 'go-autocomplete))
 
