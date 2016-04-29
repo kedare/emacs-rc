@@ -26,6 +26,7 @@
 (load "~/.emacs.d/my-perl")
 (load "~/.emacs.d/my-python")
 (load "~/.emacs.d/my-ruby")
+(load "~/.emacs.d/my-go")
 (load "~/.emacs.d/my-js")
 (load "~/.emacs.d/my-web")
 (load "~/.emacs.d/my-org")
