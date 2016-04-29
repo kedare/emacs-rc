@@ -20,6 +20,7 @@
 
 (load "~/.emacs.d/my-packages")
 (load "~/.emacs.d/my-settings")
+(load "~/.emacs.d/my-spanish")
 (load "~/.emacs.d/my-debian")
 (load "~/.emacs.d/my-erc")
 (load "~/.emacs.d/my-evil")
