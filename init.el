@@ -31,7 +31,9 @@
 (load "~/.emacs.d/my-org")
 (load "~/.emacs.d/my-markdown")
 (load "~/.emacs.d/my-gnus")
-(load "~/.private-emacs.d/init")
+(if (file-exists-p "~/.private-emacs.d/init.el")
+    (load "~/.private-emacs.d/init")
+ )
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
