@@ -144,6 +144,6 @@
 (global-set-key (kbd "C-X C-D") 'dired)
 
 ;; Occur is nice
-(global-set-key (kbd "C-c o") 'occur)
+(global-set-key (kbd "C-c o") 'helm-occur)
 
 ;; END OF SETTINGS
