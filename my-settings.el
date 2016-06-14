@@ -143,4 +143,7 @@
 ;; Dired everywhere
 (global-set-key (kbd "C-X C-D") 'dired)
 
+;; Occur is nice
+(global-set-key (kbd "C-c o") 'occur)
+
 ;; END OF SETTINGS
