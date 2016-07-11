@@ -22,11 +22,7 @@
       emacs-tmp-dir)
 
 ;; Autocompletion configuration
-(ac-config-default)
-(setq ac-delay 1)
-(setq ac-quick-help-delay 1)
-(setq ac-auto-start t)
-(setq ac-dwim t)
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; Parenthesis highlight everywhere
 (define-globalized-minor-mode global-highlight-parentheses-mode
@@ -39,6 +35,8 @@
 (yas-global-mode 1)
 
 (add-hook 'after-init-hook 'global-flycheck-mode)
+
+(setq flycheck-idle-change-delay 5)
 
 (setq select-active-regions nil)
 (setq mouse-drag-copy-region t)
@@ -85,15 +83,6 @@
 
 (global-set-key (kbd "C-x C-z") 'next-multiframe-window)
 
-;; IDO is dead
-;;(require 'ido)
-;;(require 'ido-vertical-mode)
-;;(setq ido-enable-flex-matching t)
-;;(setq ido-everywhere t)
-;;(ido-mode t)
-;;(ido-vertical-mode t)
-
-
 (when (display-graphic-p)
   ;; Ultimate tweaking
   (progn 
@@ -102,11 +91,7 @@
     (scroll-bar-mode -1)))
 
 
-;;(global-set-key (kbd "C-x C-b") 'ibuffer)
-;;    (autoload 'ibuffer "ibuffer" "List buffers." t)
-
 ;; Helm rox
-
 (require 'helm)
 (require 'helm-buffers)
 (require 'helm-config)
@@ -114,6 +99,8 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (define-key helm-buffer-map (kbd "C-x C-k") 'helm-buffer-run-kill-buffers)
+
+(global-set-key "\t" 'company-complete-common)
 
 ;; Use HELM for Flycheck
 ;;(eval-after-load 'flycheck

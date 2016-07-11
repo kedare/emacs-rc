@@ -27,9 +27,6 @@
  '(nrepl-message-colors
    (quote
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
- '(package-selected-packages
-   (quote
-    (zenburn-theme yascroll yas-jit yaml-mode websocket web-mode tle tern-auto-complete swiper solarized-theme smex smart-mode-line scss-mode scala-mode2 sass-mode sane-term rvm rustfmt robe racer python-mode powershell powerline plsql plsense-direx php-mode perlcritic perl-completion pde nyan-mode nvm noflet multi-term monokai-theme markdown-mode magit-svn magit-filenotify leuven-theme js2-refactor jedi-direx ido-vertical-mode highlight-parentheses helm-robe helm-perldoc helm-gitlab helm-flycheck helm-css-scss helm-c-yasnippet helm-ag-r helm-ag helm-ack gratuitous-dark-theme gotham-theme go-mode go-autocomplete flymake-yaml flymake-shell flymake-sass flymake-ruby flymake-python-pyflakes flymake-php flymake-perlcritic flymake-json flymake-css flymake-coffee flycheck-rust exec-path-from-shell evil-leader evil-escape evil-easymotion erc-hl-nicks ensime elpy dockerfile-mode docker dired-narrow debian-changelog-mode csharp-mode common-lisp-snippets color-theme-monokai auto-yasnippet arduino-mode ace-jump-mode ac-js2 ac-helm)))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
